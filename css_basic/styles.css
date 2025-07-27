@@ -1,6 +1,27 @@
+header ul {
+	list-style: none;
+	display:flex;
+	margin: 0;
+	padding: 0;
+}
+
+header li {
+	margin-right: 20px;
+}
+header .logo {
+	height: 40px;
+	width: auto;
+	max-width: 100%;
+}
+header a {
+	text-decoration: none;
+	color: pink;
+	background-color: brown;
+}
 body {
 	display: flex;
 	flex-direction: column;
+	background-color: beige;
 }
 main {
 	display: flex;
@@ -14,3 +35,4 @@ aside {
 	flex: 1;
 	overflow-y: auto;
 }
+
