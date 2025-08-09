@@ -1,0 +1,129 @@
+.site-footer {
+  background-color: #001f4d; /* Navy blue background */
+  padding: 2rem 1rem;
+  color: #bbb;
+  font-size: 0.9rem;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.footer-left {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;     
+  gap: 0.5rem;
+  flex: 1 1 auto;
+  min-width: 150px;
+}
+
+.footer-logo {
+  height: auto;          
+  max-width: 150px;       
+  width: 100%;            
+  object-fit: contain;    
+}
+
+.footer-copy {
+  color: #bbb;
+  font-size: 0.9rem;
+  text-align: center;
+  width: 100%;
+}
+
+.holberton-icon {
+  font-family: 'HolbertonIcons' !important;
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+  display: inline-block;
+  text-decoration: inherit;
+  text-align: center;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-facebook::before {
+  content: "\e908";
+}
+
+.icon-twitter::before {
+  content: "\e90f";
+}
+
+.icon-instagram::before {
+  content: "\e90a"; 
+}
+
+.social-icon {
+  font-size: 28px;
+  color: #bbb;
+  margin-left: 1.5rem;
+  transition: color 0.3s ease;
+  cursor: pointer;
+}
+
+.social-icon:hover {
+  color: #ff5a5f;
+}
+
+
+.footer-right {
+  display: flex;
+  gap: 1.5rem;
+  flex: 0 0 auto;
+}
+
+/* Responsive for small screens */
+@media (max-width: 600px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
+  }
+
+  .footer-left {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-right {
+    gap: 2rem;
+  }
+}
+
+.service-item, .result-item {
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  cursor: pointer;
+}
+
+.service-item:hover, .result-item:hover {
+  animation: bounce 0.6s ease forwards;
+  transform-origin: center bottom; /* anchor point for bounce */
+}
+
+/* Bounce keyframes */
+@keyframes bounce {
+  0% {
+    transform: scale(1) translateY(0);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.05) translateY(-10px);
+    opacity: 0.9;
+  }
+  100% {
+    transform: scale(1) translateY(0);
+    opacity: 1;
+  }
+}
+
+
