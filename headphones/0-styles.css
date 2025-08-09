@@ -76,17 +76,12 @@ body {
 .hero-content {
     position: relative;
     z-index: 1;
-    padding: 0 1rem;
+    padding: 0 0.5rem;
 }
 
 .hero h1 {
     font-size: 3rem;
-    margin-bottom: 1rem;
-}
-
-.hero p {
-    font-size: 1.25rem;
-    margin-bottom: 2rem;
+    margin-bottom: 0.5rem;
 }
 
 .cta-button {
@@ -104,6 +99,12 @@ body {
 .cta-button:hover {
     background: #e14a4f;
 }
+
+.centered-paragraph {
+        padding: 1.5rem 30rem;
+        text-align: center;
+}
+
 
 /* Mobile responsiveness */
 @media (max-width: 768px) {

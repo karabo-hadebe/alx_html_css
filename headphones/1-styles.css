@@ -10,11 +10,12 @@
   margin-bottom: 2rem;
 }
 
-.what-we-do p {
-    font-size: 1.25rem;
-    margin-bottom: 2rem;
-    position: center;
+
+.centered-paragraph {
+        padding: 1.5rem 30rem;
+        text-align: center;
 }
+
 
 .services-container {
   display: flex;
