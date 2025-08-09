@@ -1,13 +1,19 @@
 .what-we-do {
   padding: 4rem 2rem;
   text-align: center;
-  background: #f5f5f5;
+  background: white;
   color: #222;
 }
 
 .what-we-do h2 {
   font-size: 2.5rem;
   margin-bottom: 2rem;
+}
+
+.what-we-do p {
+    font-size: 1.25rem;
+    margin-bottom: 2rem;
+    position: center;
 }
 
 .services-container {
@@ -25,7 +31,6 @@
   background: white;
   padding: 2rem;
   border-radius: 10px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
   transition: transform 0.3s ease;
 }
 
@@ -34,8 +39,8 @@
 }
 
 .service-item i.holberton-icon {
-  font-size: 4rem;
-  color: #0070f3;
+  font-size: 6rem;
+  color: #ff5a5f;
   margin-bottom: 1rem;
   display: inline-block;
 }
@@ -53,12 +58,12 @@
 
 @font-face {
   font-family: 'HolbertonIcons';
-  src: url('fonts/holberton/holberton_school-icon.eot'); /* IE9 Compat Modes */
-  src: url('../fonts/holberton_school-icon.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('../fonts/holberton.woff2') format('woff2'), /* Super Modern Browsers */
-       url('../fonts/holberton_school-icon.woff') format('woff'), /* Pretty Modern Browsers */
-       url('../fonts/holberton_school-icon.ttf') format('truetype'), /* Safari, Android, iOS */
-       url('../fonts/holberton_school-icon.svg') format('svg'); /* Legacy iOS */
+  src: url('holberton_school-icon/fonts/holberton_school-icon.eot'); /* IE9 Compat Modes */
+  src: url('holberton_school-icon/fonts/holberton_school-icon.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('holberton_school-icon/fonts/holberton.woff2') format('woff2'), /* Super Modern Browsers */
+       url('holberton_school-icon/fonts/holberton_school-icon.woff') format('woff'), /* Pretty Modern Browsers */
+       url('holberton_school-icon/fonts/holberton_school-icon.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('holberton_school-icon/fonts/holberton_school-icon.svg') format('svg'); /* Legacy iOS */
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -78,16 +83,21 @@
 }
 
 .icon-code::before {
-  content: "\e900"; /* replace with your actual unicode */
+  content: "\e90e"; /* replace with your actual unicode */
 }
 
 .icon-design::before {
-  content: "\e901"; /* replace with your actual unicode */
+  content: "\e910"; /* replace with your actual unicode */
 }
 
 .icon-support::before {
-  content: "\e902"; /* replace with your actual unicode */
+  content: "\e90d"; /* replace with your actual unicode */
 }
+
+.icon-last::before {
+  content: "\e909"; /* replace with your actual unicode */
+}
+
 
 /* Add more icon classes as needed */
 
