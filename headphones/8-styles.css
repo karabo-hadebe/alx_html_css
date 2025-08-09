@@ -1,0 +1,47 @@
+/* Hide hamburger on bigger screens */
+.menu-toggle {
+  display: none;
+  font-size: 2rem;
+  background: transparent;
+  border: none;
+  color: white;
+  cursor: pointer;
+  user-select: none;
+}
+
+/* Default nav menu shown */
+.nav-list {
+  display: flex;
+  gap: 2rem;
+}
+
+/* On small screens: hide nav, show hamburger */
+@media (max-width: 480px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav-list {
+    display: none;
+    flex-direction: column;
+    background-color: rgba(0,0,0,0.9);
+    position: absolute;
+    top: 60px; /* adjust based on header height */
+    right: 0;
+    width: 200px;
+    padding: 1rem;
+    border-radius: 4px;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    opacity: 0;
+    transform: translateY(-20px);
+    pointer-events: none;
+  }
+
+  .nav-list.open {
+    display: flex;
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+  }
+}
+
