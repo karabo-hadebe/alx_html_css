@@ -1,0 +1,68 @@
+.our-results {
+  background-image: url('images/headphones_hero_2.jpg'); /* Change to your actual image path */
+  background-size: cover; /* Makes sure the image covers the section */
+  background-position: center; /* Centers the image */
+  background-repeat: no-repeat;
+  color: white; /* Text will be visible on dark background */
+  padding: 80px 20px; /* Adjust padding as needed */
+  text-align: center;
+}
+
+.our-results {
+    padding: 4rem 2rem;
+    text-align: center;
+    background-color: #ff5a5f;
+    color: white;
+}
+
+.our-results h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.our-results .centered-paragraph {
+    padding: 1.5rem 20rem;
+    text-align: center;
+    color: white;
+}
+
+.results-container {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.result-item:hover {
+    transform: translateY(-10px);
+}
+
+.result-item {
+    background-image: url('images/pentagone.png'); /* Replace with your actual path */
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 200px; /* Adjust to match your pentagon image size */
+    height: 200px; /* Same as above */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white; /* Or adjust for readability */
+    text-align: center;
+}
+
+
+.result-item h3 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;;
+}
+
+.result-item p {
+    font-size: 1rem;
+    color: white;
+}
+
